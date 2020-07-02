@@ -1,11 +1,11 @@
-package by.epam.mtv.task4;
+package by.epam.matrix.task;
 
 import java.util.Scanner;
 
-public class Matrix1 {
+public class MatrixCreating {
 	
 	/////////////////ALGORITHM 1//////////////////////////	
-	public static int[][] CreateMatrix1(int size){
+	public static int[][] createMatrix1(int size){
 		int[][] array = new int [size][size];
 		for(int i = 0; i < array.length; i++) {
 			for(int j = 0 ; j < array.length; j++) {
@@ -20,7 +20,7 @@ public class Matrix1 {
 	}
 	
 	/////////////////ALGORITHM 2//////////////////////////
-	public static int[][] CreateMatrix2(int size){
+	public static int[][] createMatrix2(int size){
 		int[][] array = new int [size][size];
 		for(int i = 0; i < array.length; i++) {
 			for(int j = 0 ; j < array.length; j++) {
@@ -32,7 +32,7 @@ public class Matrix1 {
 	}
 	
 	/////////////////ALGORITHM 3//////////////////////////
-	public static int[][] CreateMatrix3(int size){
+	public static int[][] createMatrix3(int size){
 		int[][] array = new int [size][size];
 		for(int i = 0; i <(array.length / 2); i++) {
 			for(int j = i ; j < array.length - i; j++) {
@@ -58,18 +58,18 @@ public class Matrix1 {
         in.close();
         
         System.out.println("Array (1 algorithm) : ");
-		int[][] array1 = CreateMatrix1(2 * size);
-		PrintMatrix.Print(array1);
+		int[][] array1 = createMatrix1(2 * size);
+		PrintMatrix.print(array1);
 		System.out.println();
 		
 		System.out.println("Array (2 algorithm) : ");
-		int[][] array2 = CreateMatrix2(2 * size);
-		PrintMatrix.Print(array2);
+		int[][] array2 = createMatrix2(2 * size);
+		PrintMatrix.print(array2);
 		System.out.println();
 		
 		System.out.println("Array (3 algorithm) : ");
-		int[][] array3 = CreateMatrix3(2 * size);
-		PrintMatrix.Print(array3);
+		int[][] array3 = createMatrix3(2 * size);
+		PrintMatrix.print(array3);
 		System.out.println();
 	}
 }

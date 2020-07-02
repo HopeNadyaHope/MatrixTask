@@ -1,11 +1,11 @@
-package by.epam.mtv.task4;
+package by.epam.matrix.task;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Matrix5 {
+public class MatrixMult {
 
-	public static int[][] Mult(int [][]A,int [][]B){
+	public static int[][] mult(int [][]A,int [][]B){
 		if(A[0].length != B.length)
 			return null;
 		int [][]mult = new int[A.length][B[0].length];
@@ -58,17 +58,17 @@ public class Matrix5 {
 		}
 		
 		System.out.println("Matrix A: ");
-		PrintMatrix.Print(A);
+		PrintMatrix.print(A);
 		System.out.println("Matrix B: ");
-		PrintMatrix.Print(B);
+		PrintMatrix.print(B);
 		
 		System.out.println("Matrix A x B: ");
 		int[][] mult;
-		mult = Mult(A, B);
+		mult = mult(A, B);
 		if(mult == null)
 			System.out.println("Incorrect sizes ");
 		else 
-			PrintMatrix.Print(mult);
+			PrintMatrix.print(mult);
 	}
 
 }

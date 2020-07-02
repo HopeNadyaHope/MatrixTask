@@ -1,11 +1,11 @@
-package by.epam.mtv.task4;
+package by.epam.matrix.task;
 
 import java.util.Scanner;
 
-public class Matrix4 {
+public class MatrixCretingPow {
 
 	/////////////////CreateMatrix/////////////////////////////
-	public static double[][] CreateMatrix(double []array){
+	public static double[][] createMatrix(double []array){
 		double[][] matrix = new double [array.length][array.length];
 		for(int i = 0; i < array.length ; i++) {
 			for(int j = 0; j < array.length ; j++) {
@@ -29,8 +29,8 @@ public class Matrix4 {
 			array[i] = (Math.random() * 10);
 		}
 		
-		double [][] matrix = CreateMatrix(array);
-		PrintMatrix.Print(matrix);
+		double [][] matrix = createMatrix(array);
+		PrintMatrix.print(matrix);
         
 	}
 }

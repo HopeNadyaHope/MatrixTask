@@ -1,11 +1,11 @@
-package by.epam.mtv.task4;
-
+package by.epam.matrix.task;
 import java.util.Scanner;
+
 
 public class MagicSquare {
 
 	/////////////////OddMagicSquare////////////////////////////
-	public static int[][] OddMagicSquare(int n){
+	public static int[][] oddMagicSquare(int n){
 		int[][] magicSqr = new int[n][n];
 		int i;
 		int j;
@@ -33,7 +33,7 @@ public class MagicSquare {
 	}
 	
 	/////////////////EvenEvenMagicSquare///////////////////////
-	public static int[][] EvenEvenMagicSquare(int n){
+	public static int[][] evenEvenMagicSquare(int n){
 		int[][] magicSqr = new int[n][n];
 		int value;
 		
@@ -71,9 +71,9 @@ public class MagicSquare {
 	}
 	
 	/////////////////EvenOddMagicSquare///////////////////////
-	public static int[][] EvenOddMagicSquare(int n){
+	public static int[][] evenOddMagicSquare(int n){
 		int half = n / 2;
-		int[][]magicOddSqr = OddMagicSquare(half);
+		int[][]magicOddSqr = oddMagicSquare(half);
 		
 		//create square from 4 oddMagic 
 		int[][] magicSqr = new int[n][n];
@@ -144,13 +144,13 @@ public class MagicSquare {
         
         int[][] magicSquare = new int[n][n];
     	if(n % 2 == 1)
-    		magicSquare = OddMagicSquare(n);
+    		magicSquare = oddMagicSquare(n);
     	if(n % 4 == 0)
-    		magicSquare = EvenEvenMagicSquare(n);
+    		magicSquare = evenEvenMagicSquare(n);
     	if(n % 4 == 2)
-    		magicSquare = EvenOddMagicSquare(n);
+    		magicSquare = evenOddMagicSquare(n);
     	
-    	PrintMatrix.Print(magicSquare);
-    	PrintMatrix.PrintSum(magicSquare);
+    	PrintMatrix.print(magicSquare);
+    	PrintMatrix.printSum(magicSquare);
 	}
 }

@@ -1,9 +1,8 @@
-package by.epam.mtv.task4;
+package by.epam.matrix.task;
 
 public class PrintMatrix {
-	
-	
-	public static void Print(double[][] matrix) {
+
+	public static void print(double[][] matrix) {
 		for(int i = 0; i < matrix.length; i++) {
 			for(int j = 0 ; j < matrix[0].length; j++) {
 				System.out.print(matrix[i][j] + "  " );
@@ -13,7 +12,7 @@ public class PrintMatrix {
 	}
 	
 	
-	public static void Print(int[][] matrix) {
+	public static void print(int[][] matrix) {
 		for(int i = 0; i < matrix.length; i++) {
 			for(int j = 0 ; j < matrix[0].length; j++) {
 				System.out.printf ("% 5d", matrix[i][j] );
@@ -22,7 +21,7 @@ public class PrintMatrix {
 		}
 	}
 	
-	public static void PrintSum(int [][]matrix) {
+	public static void printSum(int [][]matrix) {
 		int sum;
 		
 		//Sum in rows
